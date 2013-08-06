@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form compare</title>
+    <script src="js/load.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        body {
+            width: 400px;
+            margin: 20px auto 0;
+        }
+        form {
+            border: 1px silver solid;
+            border-bottom: none;
+        }
+        label {
+            display: block;
+        }
+        form>ul>li {
+            border-bottom: 1px silver solid;
+            padding: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="showDifference">Show difference</button>
+    <form name="compareForm">
+        <ul>
+            <li>
+                <label>
+                    Name 1:
+                    <input type="text" name="name">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Name 2:
+                    <input type="text" name="name">
+                </label>
+            </li>
+            <li>
+                <label>
+                    Phone:
+                    <input type="text" name="phone">
+                </label>
+            </li>
+            <li>
+                Old:
+                <label>
+                    0-9
+                    <input type="radio" name="old" value="0-9"/>
+                </label>
+                <label>
+                    10-19
+                    <input type="radio" name="old" value="10-19"/>
+                </label>
+                <label>
+                    20->
+                    <input type="radio" name="old" value="20->"/>
+                </label>
+            </li>
+            <li>
+                Religion:
+                <label>
+                    Catholicism
+                    <input type="checkbox" name="religion" value="catholicism"/>
+                </label>
+                <label>
+                    Orthodoxy
+                    <input type="checkbox" name="religion" value="orthodoxy"/>
+                </label>
+                <label>
+                    Buddhism
+                    <input type="checkbox" name="religion" value="buddhism"/>
+                </label>
+            </li>
+            <li>
+                <label>
+                    Sex
+                    <select name="sex">
+                        <option value="0">-- Select sex</option>
+                        <option>Man</option>
+                        <option>Woman</option>
+                        <option>Transvestite</option>
+                    </select>
+                </label>
+            </li>
+        </ul>
+    </form>
+
+    <div id="log"></div>
+</body>
+</html>
